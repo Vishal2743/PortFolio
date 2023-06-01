@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Aravinth's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fafebfe5db.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Assets/logo_alt1.png">
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Vishal Aravinth.</span></h1>
+                <p>Studying B.Tech in Computer Science and Engineering.</p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assets/Vishal_photo.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Vishal Aravinth, a third year student in SRM Institue of
+                        Science and Technology,specializing in Information and Technology. I like to code and I am
+                        currently learning android app development. My hobbies are listening music and playing games....
+                    </p>
+
+                    <div class="tab-titles">
+                        <p>Education</p>
+                    </div>
+                    <div class="education1">
+                        <p>Class 10 - <span>94.4%</span> <br>
+                            Zion matriculation higher secondary school - 2018
+                        </p>
+                    </div>
+                    <div class="education2">
+                        <p>Class 12 - <span>90.2%</span> <br>
+                            St.John's public school - 2020
+                        </p>
+                    </div>
+                    <div class="education3">
+                        <p> B.Tech Computer Science - <span>9.25</span> (average upto fourth semester) <br>
+                            SRM Institute of Science and Technology - 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>C/C++</h2><br>
+                    <!-- <p>5 star in Hackerrank</p> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2><br>
+                    <!-- <p>4 star in Hackerrank</p> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2><br>
+                    <!-- <p>3 star in Hackerrank</p> -->
+                </div>
+            </div>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Flutter</h2><br>
+                    <!-- <p>Created few apps</p> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML/CSS</h2><br>
+                    <!-- <p></p> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>MySQL</h2><br>
+                    <!-- <p>3 star in Hackerrank</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div id="achievements">
+        <div class="container">
+            <h1 class="sub-title">Achievements</h1>
+            <div class="badges">
+                <div class="badges1">
+                    <img src="Assets/C_Badge.png">
+                </div>
+                <div class="badges1">
+                    <img src="Assets/Java_Badge.png">
+                </div>
+                <div class="badges1">
+                    <img src="Assets/Python_Badge.png">
+                </div>
+            </div>
+            <div class="slider">
+                <span id="slide-1"></span>
+                <span id="slide-2"></span>
+                <span id="slide-3"></span>
+                <div class="image-container">
+                    <img src="Assets/AWS_Certificate.png" class="slide" width="500" height="300" />
+                    <img src="Assets/MOOC_Certificate.png" class="slide" width="500" height="300" />
+                    <img src="Assets/Elab_Certificate.png" class="slide" width="500" height="300" />
+                </div>
+                <div class="buttons">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+            <div id="hidewin">
+                <img src="Assets/AWS_Certificate.png" class="slide" width="300" height="200" />
+                <img src="Assets/MOOC_Certificate.png" class="slide" width="300" height="200" />
+                <img src="Assets/Elab_Certificate.png" class="slide" width="300" height="200" />
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-school"></i>
+                    <h2>Student Registry App</h2>
+                    <p>A app where you can add students <br>and manage their records</p>
+                    <a href="https://github.com/Vishal2743/Student-registry-app" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    <h2>Elections Dapp</h2>
+                    <p>A app which can save and retrieve data from a blockchain network</p>
+                    <a href="https://github.com/SherwinBenjamin/skilenza-hackathon/tree/main/pollbox"
+                        target="_blank">Learn
+                        More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>Task Manager App</h2>
+                    <p>A app where a person can assign and check completion status of a Task</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space1"></div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> Vishalanbazhagan2@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="http://"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/vishaalll69/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vishal-aravinth-a-991485238" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Assets/CN_Portfolio.pdf" target="_blank" class="btn btn2">Open Portfolio</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name">
+                        <input type="text" name="Email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0px";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
